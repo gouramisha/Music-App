@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🎵 Amisha Music</h2>
+    <ul>
+      <li>Home</li>
+      <li>Playlists</li>
+      <li>Artists</li>
+      <li>Albums</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="album-section">
+      <img src="https://i.imgur.com/u7x0gQy.jpeg" alt="Album Art" class="album-art" id="albumArt">
+      <h3 id="songTitle">Shape of You</h3>
+      <p id="artist">Ed Sheeran</p>
+
+      <div class="controls">
+        <button id="prevBtn">⏮️</button>
+        <button id="playPauseBtn">▶️</button>
+        <button id="nextBtn">⏭️</button>
+      </div>
+
+      <div class="progress-bar" id="progressContainer">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <h4>Playlist</h4>
+      <ul id="playlist">
+        <li>Shape of You</li>
+        <li>Perfect</li>
+        <li>Let Me Down Slowly</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <p>Now Playing: <b id="nowPlaying">Shape of You</b></p>
+  </div>
+
+  <audio id="audioPlayer" src="songs/song1.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+

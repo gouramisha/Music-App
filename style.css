@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.music-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.player img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.controls {
+  margin: 15px 0;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+button:hover {
+  color: #00ffff;
+}
+
+#progress,
+#volume {
+  width: 100%;
+  margin: 8px 0;
+}
